@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nuevos trabajos</h1>
+
+<div class="row">
+  <% @stories.each do |s| %>
+    <div class="col-4">
+      <%= render "card_story", story: s %>
+    </div>
+  <% end %>
+</div>

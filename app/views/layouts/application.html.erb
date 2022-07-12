@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="fondo">
+  <head>
+    <title>AutanaMuebles</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Íconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+
+<body class="fondo">
+  <%= render "shared/navbar2" %>
+   
+  <div class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>Bienvenidos</h1>
+							<p>Somos un equipo profesional enfocados en la fabricación de muebles de melamina, diseñamos a tu gusto. Ubicados en la ciudad de La Serena. Visita nuestro catalogo de trabajos más recientes en nuestras redes sociales. <a href="https://www.instagram.com/autanamuebles/?hl=es">Instagram</a></p>
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="<%= asset_path 'nevera1.jpg' %>"></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>Muebles a medida, diseñados a gusto de nuestros exclusivos clientes</h2>
+						</header>
+						<div class="content">
+							<p><strong>Con la cotización entregramos diseño en 3D con la propuesta y de acuerdo a los planteamientos y requerimientos, para ayudar a nuestro cliente a visualizar los detalles, colores y procurar el mayor aprovechamiento del espacio.</p>
+							<span class="image main"><img src="<%= asset_path '3d5.jpg' %>"></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Somos especialistas en la fabricación de muebles en melamina cocinas, veladores, escritorios, repisas, libreros, comodas, entre otros</h2>
+						</header>
+						<div class="content">
+							<p><strong>Innovamos continuamente.</strong> Al entregar una cotización nos aseguramos de entender todas las expectativas y preocupaciones de nuestros clientes.</p>
+							<ul class="feature-icons">
+								<li class="icon solid fa-laptop">Acordamos la fecha de entrega del proyecto con los clientes.</li>
+								<li class="icon solid fa-bolt">Trabajamos con materiales de la más alta calidad para la más amplia durabilidad de nuestros productos.</li>
+								<li class="icon solid fa-signal">Asesoramos y diseñamos al gusto del cliente.</li>
+								<li class="icon solid fa-cog">Contamos con una experiencia comprobable de más de 5 años en el rubro, operando en Coquimbo por más de dos años continuos.</li>
+								<li class="icon solid fa-map-marker-alt">Empleamos tecnologia y herramientas de ultima generación y continuamente capacitamos a nuestro personal.</li>
+								<li class="icon solid fa-code">Siempre atentos a escuchar a nuestro clientes, nuestra garantia es su satifisfacción.</li>
+							</ul>
+							
+						</div>
+					</section>
+
+        <!-- Section -->
+        <div class="container">
+          <%= yield %>    
+        </div>
+        
+
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Contactanos</h2>
+						</header>
+						<div class="content">
+							<p><strong>Puedes encontrar nuestra información de contacto en nuestras redes sociales </p>
+              <div> <a href="https://www.instagram.com/autanamuebles/?hl=es">Instagram @Autanamuebles.</a></div>
+              <div> <a href="https://www.facebook.com/pages/category/Furniture/Autana-Muebles-107446904755528/">Facebook Autana Muebles.</a></div>
+              <div> <a href="https://autanamuebles.negocio.site/">Google Autana Muebles.</a></div>
+              <div> <a href="https://www.google.com/maps/place/Autana+Muebles/@-29.9484728,-71.2453176,17z/data=!3m1!4b1!4m5!3m4!1s0x9691cbf5bfc97181:0xd1d4dbefe2066cfd!8m2!3d-29.9484728!4d-71.2431289">Google maps Autana Muebles.</a></div>
+              </div>
+
+						
+							
+  </div>
+   
+   
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+  
+    <!-- Copyright -->
+    <div class="copyright"><a href="https://www.instagram.com/autanamuebles/?hl=es">&copy; Copyright 2022 Autana Muebles.</a></div>
+
+    </body>
+</html>
